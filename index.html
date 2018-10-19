@@ -13,18 +13,26 @@
         <div id="inputCommands" class="box">
             <div id="dayOfTheWeek"></div>
             <p>You clocked in today at:</p>
-            <input type="time" value="08:30">
-            <p>Hours logged so far:</p>
-            <input class="timeBox" id="hours" maxlength='2' value="0"
+            <input id="timeClockedIn" type="time" value="08:45">
+            <p>Time logged so far:</p>
+            <input class="timeBox" id="hours" maxlength='2' value="71"
                    oninput="validatePassKey(this)"
                    onchange="validatePassKey(this)"
                     onfocus="clearField(this)">:
-            <input class="timeBox" id="minutes" maxlength='2' value="0"
-                   onfocus="clearField(this)">
+            <input class="timeBox" id="minutes" maxlength='2' value="40"
+                   onfocus="clearField(this)"><br>
+            <button onclick="calcHours()">Calc</button>
         </div>
         
         <div id="output" class="box">
-            You should clock out at: <br>
+            <p class="italic">And, sometimes on a summer's day</p>
+            <p class="italic">To self and every mortal ill</p>
+            <p class="italic">We give the slip, we steal away,</p>
+            <p class="italic"> To walk beside some sedgy rill:</p>
+            <p class="italic">The darkening years, the cares that kill,</p>
+            <p class="italic">A little while are well forgot;</p>
+            <p class="italic">When deep in broom upon the hill,</p>
+            <p class="italic">We'd rather be alive than not.</p>
             <div id="result"></div>
         </div>
     </div>

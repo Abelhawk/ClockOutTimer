@@ -1,21 +1,39 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
     width: 100%;
     background: lightslategrey;
     text-align: center;
     height: 98%;
 }
 
+p {
+    margin-bottom: 2px;
+}
+
+button {
+    background: lightslategrey;
+    color: white;
+}
+
+.timeDisplay{
+    font-size: 24pt;
+}
+
 main{
     height: 90%;
+}
+
+.italic {
+    margin: 0 0 2px 0;
+    font-style: italic;
 }
 
 .box {
     background: #b9cfe5;
     padding: 20px;
     margin: 20px;
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.46);
 }
 
 .flexBox {
@@ -42,4 +60,8 @@ footer span{
     bottom:0;
     right:100px;
     color: #b9cfe5;
+}
+
+#output{
+    width: 270px;
 }

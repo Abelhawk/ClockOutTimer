@@ -20,6 +20,10 @@ button {
     font-size: 24pt;
 }
 
+h1 {
+    margin-bottom: 5px;
+}
+
 main{
     height: 90%;
 }

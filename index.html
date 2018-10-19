@@ -13,28 +13,28 @@
         <div id="inputCommands" class="box">
             <div id="dayOfTheWeek"></div>
             <p>You clocked in today at:</p>
-            <input id="timeClockedIn" type="time" value="08:45">
+            <input id="timeClockedIn" type="time" value="08:30">
             <p>Time logged so far:</p>
-            <input class="timeBox" id="hours" maxlength='2' value="71"
+            <input class="timeBox" id="hours" maxlength='2' value="32"
                    oninput="validatePassKey(this)"
                    onchange="validatePassKey(this)"
                     onfocus="clearField(this)"
                    onblur="gottaBeZero(this)">:
-            <input class="timeBox" id="minutes" type="number" maxlength='2' value="40"
+            <input class="timeBox" id="minutes" type="number" maxlength='2' value="0"
                    onfocus="clearField(this)"
                    onblur="gottaBeZero(this)"><br>
             <button onclick="calcHours()">Calc</button>
         </div>
         
         <div id="output" class="box">
-            <p class="italic">And, sometimes on a summer's day</p>
+            <p class="italic">"And, sometimes on a summer's day</p>
             <p class="italic">To self and every mortal ill</p>
             <p class="italic">We give the slip, we steal away,</p>
             <p class="italic"> To walk beside some sedgy rill:</p>
             <p class="italic">The darkening years, the cares that kill,</p>
             <p class="italic">A little while are well forgot;</p>
             <p class="italic">When deep in broom upon the hill,</p>
-            <p class="italic">We'd rather be alive than not.</p>
+            <p class="italic">We'd rather be alive than not."</p>
             <div id="result"></div>
         </div>
     </div>

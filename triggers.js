@@ -90,21 +90,23 @@ function calcHours() {
     if (xHours >= 12) ampm = 'PM';
     else ampm = 'AM';
     let clockOutTime = new Date(todaysDate.getFullYear(), todaysDate.getMonth(), todaysDate.getDate(), xHours, xMinutes, 0);
-    console.log(clockOutTime);
     if (xMinutes < 10) xMinutes = '0' + xMinutes;
     if (xHours > 12) xHours -= 12;
     if (Math.sign(todaysDate - clockOutTime) === -1) {
-        div.style.backgroundColor = '#b9cfe5';
-        div.innerHTML = `<h3>You should clock out today at:</h3><p class="timeDisplay">
-        ${xHours}:${xMinutes} ${ampm}
-    </p>`;
+        if (xHours <= 12) {
+            div.style.backgroundColor = '#b9cfe5';
+            div.innerHTML = `<h3>You should clock out today at:</h3><p class="timeDisplay">
+            ${xHours}:${xMinutes} ${ampm}</p>`;
+        } else {
+            div.innerHTML = `<h3>There's no way you can finish all your hours today. Check back tomorrow.</h3>`
+        }
     } else {
         div.style.backgroundColor = 'lightcoral';
-        div.innerHTML = `<h3>Good heavens, you're over on time! Clock out <span class="italic">now,</span> you maniac! Go! <span class="italic">GO!!</span></h3>`
+        div.innerHTML = `<h2>Good heavens, you're over on time! Clock out <span class="italic">now,</span> you maniac! Go! <span class="italic">GO!!</span></h2>`
     }
 }
 
-function gottaBeZero(input){
+function gottaBeZero(input) {
     if (input.value === '') input.value = '0';
 }
 

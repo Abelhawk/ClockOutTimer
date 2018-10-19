@@ -8,7 +8,7 @@ body, html {
 }
 
 p {
-    margin-bottom: 2px;
+    margin: 0 0 2px 0;
 }
 
 button {
@@ -16,12 +16,18 @@ button {
     color: white;
 }
 
+.subtitle{
+    font-style: italic;
+    font-size: small;
+    margin-bottom: 5px;
+}
+
 .timeDisplay{
     font-size: 24pt;
 }
 
 h1 {
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 main{
@@ -53,6 +59,7 @@ main{
 
 #dayOfTheWeek, #clock {
     font-weight: bold;
+    margin-bottom: 15px;
 }
 
 footer {

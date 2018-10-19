@@ -102,7 +102,7 @@ function calcHours() {
         }
     } else {
         div.style.backgroundColor = 'lightcoral';
-        div.innerHTML = `<h2>Good heavens, you're over on time! Clock out <span class="italic">now,</span> you maniac! Go! <span class="italic">GO!!</span></h2>`
+        div.innerHTML = `<h2>Good heavens, you're working overtime! Clock out <span class="italic">now,</span> you maniac! Go! <span class="italic">GO!!</span></h2>`
     }
 }
 

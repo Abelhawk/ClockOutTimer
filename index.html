@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>When to Clock Out?</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="triggers.js" defer></script>
+</head>
+<body>
+<main>
+    <h1>What Time Should You Clock Out?</h1>
+    <div class="flexBox">
+        <div id="inputCommands" class="box">
+            <div id="dayOfTheWeek"></div>
+            <p>You clocked in today at:</p>
+            <input type="time" value="08:30">
+            <p>Hours logged so far:</p>
+            <input class="timeBox" id="hours" maxlength='2' value="0"
+                   oninput="validatePassKey(this)"
+                   onchange="validatePassKey(this)"
+                    onfocus="clearField(this)">:
+            <input class="timeBox" id="minutes" maxlength='2' value="0"
+                   onfocus="clearField(this)">
+        </div>
+        
+        <div id="output" class="box">
+            You should clock out at: <br>
+            <div id="result"></div>
+        </div>
+    </div>
+    <div id="clock"></div>
+</main>
+<footer><span>©Austin Ballard</span></footer>
+</body>
+</html>

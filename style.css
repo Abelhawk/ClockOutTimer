@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: lightslategrey;
+    text-align: center;
+    height: 98%;
+}
+
+main{
+    height: 90%;
+}
+
+.box {
+    background: #b9cfe5;
+    padding: 20px;
+    margin: 20px;
+}
+
+.flexBox {
+    display: flex;
+    justify-content: center;
+}
+
+.timeBox{
+    width: 40px;
+    margin: 0;
+    text-align:center;
+}
+
+#dayOfTheWeek, #clock {
+    font-weight: bold;
+}
+
+footer {
+    position:relative;
+}
+
+footer span{
+    position: absolute;
+    bottom:0;
+    right:100px;
+    color: #b9cfe5;
+}

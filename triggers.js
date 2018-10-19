@@ -102,7 +102,10 @@ function calcHours() {
         div.style.backgroundColor = 'lightcoral';
         div.innerHTML = `<h3>Good heavens, you're over on time! Clock out <span class="italic">now,</span> you maniac! Go! <span class="italic">GO!!</span></h3>`
     }
+}
 
+function gottaBeZero(input){
+    if (input.value === '') input.value = '0';
 }
 
 function rando(n) {

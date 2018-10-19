@@ -18,9 +18,11 @@
             <input class="timeBox" id="hours" maxlength='2' value="71"
                    oninput="validatePassKey(this)"
                    onchange="validatePassKey(this)"
-                    onfocus="clearField(this)">:
-            <input class="timeBox" id="minutes" maxlength='2' value="40"
-                   onfocus="clearField(this)"><br>
+                    onfocus="clearField(this)"
+                   onblur="gottaBeZero(this)">:
+            <input class="timeBox" id="minutes" type="number" maxlength='2' value="40"
+                   onfocus="clearField(this)"
+                   onblur="gottaBeZero(this)"><br>
             <button onclick="calcHours()">Calc</button>
         </div>
         
